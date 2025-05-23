@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install required Python packages
-RUN pip install --no-cache-dir fastapi uvicorn pandas sentence_transformers
+RUN pip install --no-cache-dir fastapi uvicorn pandas sentence_transformers faiss
 
 # Expose the port your service will run on
 EXPOSE 8001
